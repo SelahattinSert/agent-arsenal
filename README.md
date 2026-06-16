@@ -22,7 +22,7 @@
 
 <br/>
 
-[![Repos](https://img.shields.io/badge/repos_indexed-28-000000?style=for-the-badge&labelColor=111)](.)
+[![Repos](https://img.shields.io/badge/repos_indexed-29-000000?style=for-the-badge&labelColor=111)](.)
 [![PRs](https://img.shields.io/badge/PRs-welcome-22c55e?style=for-the-badge&labelColor=111)](.)
 [![License](https://img.shields.io/badge/license-MIT-3b82f6?style=for-the-badge&labelColor=111)](LICENSE)
 [![Updated](https://img.shields.io/badge/updated-2026-a855f7?style=for-the-badge&labelColor=111)](.)
@@ -37,7 +37,7 @@ A categorized index of AI agent frameworks, developer tools, orchestration syste
 
 | | Category | Repos |
 |--|--|--|
-| 🛠️ | [Developer Tools & Skill Libraries](#️-developer-tools--skill-libraries) | 6 |
+| 🛠️ | [Developer Tools & Skill Libraries](#️-developer-tools--skill-libraries) | 7 |
 | 🏗️ | [Agent Frameworks & Architectures](#️-agent-frameworks--architectures) | 6 |
 | 📋 | [Project & Task Management](#-project--task-management) | 2 |
 | ⚡ | [Performance & Code Quality](#-performance--code-quality) | 2 |
@@ -49,6 +49,23 @@ A categorized index of AI agent frameworks, developer tools, orchestration syste
 ## 🛠️ Developer Tools & Skill Libraries
 
 <br/>
+
+### [`affaan-m/ECC`](https://github.com/affaan-m/ECC)
+
+**ECC — Agent Harness Performance System** &nbsp;·&nbsp; *Skills, memory, hooks, and security for every major AI coding harness*
+
+A cross-harness operator system built from 10+ months of daily production use. Where most CLAUDE.md repos stop at guidelines, ECC ships a complete infrastructure layer: 63 specialized subagents, 249 workflow skills, a hook runtime with lifecycle events, a continuous learning system that extracts patterns from your sessions, and AgentShield — a security scanner with 102 static analysis rules for auditing your agent configuration. Works across Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Zed, and GitHub Copilot without modification.
+
+- **Cross-harness by design** — shared `skills/` folder loads identically across Claude Code, Codex, OpenClaw, and Hermes Agent; each harness gets its own adapter (`.claude/`, `.codex/`, `.cursor/`, `.opencode/`) without duplicating content
+- **Continuous learning** — Stop-hook pattern extraction (v1) and instinct-based learning with confidence scoring (v2) automatically distill session patterns into reusable skills over time
+- **AgentShield** — security auditor with 1,282 tests and 102 rules scanning CLAUDE.md, MCP configs, hooks, and agent definitions for secrets, injection risks, and permission misconfigurations; runs a three-agent red-team/blue-team/auditor pipeline with `--opus`
+- **Hook runtime controls** — 8 Claude Code event types (20+ in OpenCode), runtime gating via `ECC_HOOK_PROFILE` and `ECC_DISABLED_HOOKS`, cross-platform Node.js scripts shared across all harnesses
+
+> **When to use it:** Any project where you want structured agent behavior, persistent memory across sessions, and security guardrails — without manually assembling those pieces across multiple tools.
+
+<br/>
+
+---
 
 ### [`openai/codex-plugin-cc`](https://github.com/openai/codex-plugin-cc)
 
