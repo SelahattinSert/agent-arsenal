@@ -37,7 +37,7 @@ A categorized index of AI agent frameworks, developer tools, orchestration syste
 
 | | Category | Repos |
 |--|--|--|
-| 🛠️ | [Developer Tools & Skill Libraries](#️-developer-tools--skill-libraries) | 7 |
+| 🛠️ | [Developer Tools & Skill Libraries](#️-developer-tools--skill-libraries) | 8 |
 | 🏗️ | [Agent Frameworks & Architectures](#️-agent-frameworks--architectures) | 6 |
 | 📋 | [Project & Task Management](#-project--task-management) | 2 |
 | ⚡ | [Performance & Code Quality](#-performance--code-quality) | 2 |
@@ -62,6 +62,24 @@ A cross-harness operator system built from 10+ months of daily production use. W
 - **Hook runtime controls** — 8 Claude Code event types (20+ in OpenCode), runtime gating via `ECC_HOOK_PROFILE` and `ECC_DISABLED_HOOKS`, cross-platform Node.js scripts shared across all harnesses
 
 > **When to use it:** Any project where you want structured agent behavior, persistent memory across sessions, and security guardrails — without manually assembling those pieces across multiple tools.
+
+<br/>
+
+---
+
+### [`Ducksss/codex-profiles`](https://github.com/Ducksss/codex-profiles)
+
+**codex-profiles** &nbsp;·&nbsp; *Named local-state contexts for Codex CLI and ChatGPT Desktop*
+
+Selects a separate `CODEX_HOME` for each CLI profile. On macOS, named app
+launches also select separate Electron local state for the whole ChatGPT
+window; the tool does not read, copy, print, parse, upload, compare, or migrate
+tokens, and it does not assume that CLI and Desktop use the same account.
+
+- **Predictable CLI mapping** — `default` uses `~/.codex`; other names use `~/.codex-<name>`
+- **Explicit boundary** — operating-system credentials and server-side ChatGPT state remain outside the isolation boundary
+
+> **When to use it:** Switching among personal, work, school, or client Codex contexts while keeping each context's local state separate.
 
 <br/>
 
